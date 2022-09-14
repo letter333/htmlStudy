@@ -26,10 +26,26 @@
             float: left;
         }
 
+        .list a {
+            text-decoration: none;
+        }
+
+        .list a:visited {
+            color: red;
+        }
+
         .list::after {
             content: "";
             display: block;
             clear: both;
+        }
+
+        .list ol a:nth-child(2n) {
+            color: #ACC7B4;
+        }
+        
+        .list ol a:nth-child(2n-1) {
+            color: #331B3F;
         }
 
         .profile {
@@ -39,7 +55,7 @@
         }
 
         .profile h2 {
-            border: 1px solid black;
+            border: 2px solid black;
             height: 50px;
             line-height: 50px;
             color: brown;
@@ -61,6 +77,10 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+
+        .list-content a:visited {
+            color: red;
+        }
         
         .list-content h2 {
             display: inline-block;
@@ -75,6 +95,7 @@
                 <a href="#list1"><li>소개</li></a>
                 <a href="#list2"><li>목차2</li></a>
                 <a href="#list3"><li>목차3</li></a>
+                <a href="#list4"><li>동영상</li></a>
             </ol>
         </div>
         <div class="profile">
@@ -101,19 +122,20 @@
         </div>
         <div class="list-content">
             <br>
-            <a href="#"><h2 id="list1">소개</h2></a>
+            <a href="#" id="list1"><h2>1.</h2></a><h2>소개</h2>
+            
             <hr>
             <p>경상북도 구미시 어딘가에 살고있는 25살 오세룡</p>
             <br>
-            <a href="#"><h2 id="list2">목차2</h2></a>
+            <a href="#" id="list2"><h2>2.</h2></a><h2>목차2</h2>
             <hr>
             <p>무슨 내용을 써야될지 생각나지 않습니다.. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid asperiores non sapiente. Facere, assumenda voluptatum obcaecati excepturi ad quos quas a rem asperiores, nesciunt praesentium, corrupti quasi vero. Autem, itaque quae, eos sunt debitis saepe illum iure, eum dolorum cumque possimus blanditiis illo explicabo! Facilis sequi officiis vero aspernatur, deserunt accusamus reprehenderit tempora placeat nemo minima facere vitae eaque cupiditate ullam magni eligendi quas, omnis error fuga voluptates veritatis hic? Vero quia voluptate quaerat, voluptatem ad officia vitae quisquam nesciunt asperiores consequuntur necessitatibus possimus iusto inventore similique eos facere ducimus nihil eum reprehenderit sunt, quis quo numquam tempora aliquam.</p>
             <br>
-            <a href="#"><h2 id="list3">목차3</h2></a>
+            <a href="#" id="list2"><h2>3.</h2></a><h2>목차3</h2>
             <hr>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, ad labore quidem sapiente doloremque possimus iste quam unde hic delectus quas id, officiis excepturi qui aut, dolor illum dolore ducimus eaque temporibus at ipsum sint! Repudiandae maiores pariatur, voluptate ex eaque cumque vel obcaecati doloremque officia aliquam voluptas consectetur consequatur repellendus ducimus consequuntur quod in amet veniam exercitationem praesentium nisi ad reiciendis eligendi. Rerum voluptas nesciunt non vero et? Expedita quae, ipsa dolorum dolores voluptates eos mollitia, earum quod sit est, quos placeat quasi id hic voluptatibus! Id numquam hic et aliquam deserunt alias quo, autem eos modi molestias. Iusto!</p>
             <br>
-            <h2 id="list4">동영상</h2>
+            <a href="#" id="list4"><h2>4.</h2></a><h2>동영상</h2>
             <hr>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/E1Jvb3YK7Nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
