@@ -1,0 +1,24 @@
+#contents {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+#contents>#aside {
+    width: 150px;
+    float: left;
+    overflow: hidden;
+}
+
+#contents>#section {
+    width: 740px;
+    float: right;
+    overflow: hidden;
+}
+
+#contents>#section>.article{ 
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid purple;
+}

@@ -1,0 +1,27 @@
+#header {
+    width: 960px;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 1px solid rgb(131, 87, 189);
+}
+
+#header>#title {
+    color:rgb(71, 58, 87);
+    float: left;
+}
+
+#header>#gnb {
+    float: right;
+}
+
+#header>#gnb>ul>li {
+    display: inline-block;
+    font-size: 13px;
+}
+
+#header>#gnb>ul>li>a {
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-left: 5px;
+}
