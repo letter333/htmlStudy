@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 범솜체;
+    src: url(나눔손글씨\ 범솜체.ttf);
+}
+
+@font-face {
+    font-family: 암스테르담체;
+    src: url(나눔손글씨\ 암스테르담.ttf);
+}
+
 #contents {
     width: 960px;
     margin: 0 auto;
@@ -11,10 +21,33 @@
     overflow: hidden;
 }
 
+#contents>#aside>img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#contents>#aside {
+    font-family: 범솜체;
+    font-size: 20px;
+}
+
+table {
+    width: 150px;
+    border-collapse: collapse;
+}
+
+#contents>#aside th, #contents>#aside td {
+    border: 1px solid;
+    border-spacing: 0;
+}
+
 #contents>#section {
     width: 740px;
     float: right;
     overflow: hidden;
+    font-family: 암스테르담체;
+    font-size: 24px;
 }
 
 #contents>#section>.article{ 

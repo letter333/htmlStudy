@@ -1,18 +1,28 @@
+@font-face {
+    font-family: 범솜체;
+    src: url(나눔손글씨\ 범솜체.ttf);
+}
+.header-wrapper {
+    height: 100px;
+    background-color: rgba(131, 87, 189, .3);
+    position: relative;
+}
+
 #header {
     width: 960px;
     margin: 0 auto;
-    height: 100px;
     line-height: 100px;
-    border-bottom: 1px solid rgb(131, 87, 189);
 }
 
 #header>#title {
-    color:rgb(71, 58, 87);
+    color:white;
     float: left;
 }
 
 #header>#gnb {
-    float: right;
+    position: absolute;
+    line-height: normal;
+    right: 10px;
 }
 
 #header>#gnb>ul>li {
@@ -21,7 +31,47 @@
 }
 
 #header>#gnb>ul>li>a {
+    font-family: 범솜체;
+    font-size: 19px;
+    color: white;
+    padding: 5px;
     text-decoration: underline;
     text-underline-position: under;
-    margin-left: 5px;
+}
+
+#header>#gnb>ul>li>a:hover {
+    color: rgb(131, 87, 189);
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+#header>#lnb {
+    position: absolute;
+    line-height: normal;
+    bottom: 0;
+}
+
+#header>#lnb>ul {
+    float: right;
+}
+
+#header>#lnb>ul>li {
+    display: inline-block;
+    padding: 4px;
+}
+
+#header>#lnb>ul>li>a {
+    font-family: 범솜체;
+    font-size: 22px;
+    padding: 3px 5px 5px 0;
+    color: black;
+}
+
+#header>#lnb>ul>li>a:hover {
+
+    border: 1px solid white;
+    background-color: white;
+    color: rgb(131, 87, 189);
+    box-sizing: border-box;
+    border-radius: 5px 5px 0 0;
 }

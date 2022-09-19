@@ -27,56 +27,119 @@
             border: 0;
         }
     </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+    </style>
+    <style>
+        #title {
+            font-family: 'Ms Madi', cursive;
+        }
+    </style>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="contents.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
     <div id="wrap">
-        <header id="header">
-            <div id="title" class="clear">
-                <h1>Lorem, ipsum.</h1>
-            </div>
-            <div id="gnb" class="clear">
-                <ul>
-                    <li>
-                        <a href="#">Lorem.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem.</a>
-                    </li>
-                    <li>
-                        <a href="#">Lorem.</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        <div class="header-wrapper">
+            <header id="header">
+                <div id="title">
+                    <h1>Lorem, ipsum.</h1>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#">나도</a>
+                        </li>
+                        <li>
+                            <a href="#">아이유</a>
+                        </li>
+                        <li>
+                            <a href="#">콘서트</a>
+                        </li>
+                        <li>
+                            <a href="#">가보고싶다</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="lnb">
+                    <ul>
+                        <li><a href="">menu1</a></li>
+                        <li><a href="">menu2</a></li>
+                        <li><a href="">menu3</a></li>
+                        <li><a href="">menu4</a></li>
+                        <li><a href="">menu5</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
         <div id="contents">
             <aside id="aside">
-                <h1>Aside</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ullam minus pariatur. Nobis esse aperiam voluptates molestias tempore exercitationem veritatis ratione! Quaerat sint doloremque, laborum eligendi officia delectus architecto debitis?</p>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRUYGBgaHBwcHBocGhoYGhoYGiEcGhoaGhocIS4lHCErISEcJjgnKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQkISs0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAUsAmAMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA+EAACAQIDBAkCAwcEAgMBAAABAgADEQQSIQUxQVEGImFxgZGhscHR8DJS4QcTQmJykvEUI4KyosIzQ2Mk/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAIDAQQF/8QAIhEAAwEAAgMAAgMBAAAAAAAAAAECESExAxJBIlEygaFx/9oADAMBAAIRAxEAPwCQ0CRKDWOCeqQFqbG4lg+1GKFbanjIAELLJ1KfYLSNWEjhZLqJI5lJ6AIiTcPTkVZYYWS82qdQySbHQloYWPFYaLPPbbZeeEJVItFiwsFo8yZVB2irQKIq0sQFJCqrDQQ3EAfRDL2jTm8fcRgx0SoQRBDtBNbMRWB45SBMm43Z4RyouRwJBF+eu42jVNJb2TXBfBQWLAhWhiIAw6yKy6yU4jb0Y8gIWlLDDJGqKSfQST8tasM0GWOUqJJsBrHAkfxNZaKEOwuVLAjW2W1we3WceclHXBDDakW0Gl+BPZDKyDhUerVNZrhLWQHQkHexHnLMrKLgTliVWKAhiKAgGCVEURDAhwMIWJWR7SdXTSQysrL4JUuQrQQAwQYJmoSirqMwuCL9tjuv4TM4igFdlF9CRaTRiGpooRzyYHrrmtzO7uGkri5JJJuYsJr/AIXElYCkPNHElegGf3cWKcdCx5EmOhKXA2lO0k01jirpDcgSNVoTOAjNWmH/ABC+t9dbyLi9t0KZAdwpPDedefbHH2lSyl1dHGmqMH3/ANJ0ij6S1EFpTP0mwyfjqBe+3sLy82XUTELnpOrJ+YG4vy0h0AgiKAkrE4QqVAOYngBuHOFXo5bbr218/vygqQEe0Foq0Fpoo3UEg1FliwkGoNY8i0RSdYcU6QSjwktCC6QisWkDzDpGWXWOrErHUUnQRtAUgj9WuiLndgqjeSbCV2Px6UVLObW9+VuJ7JgdsbWfEvY3VBuX2LfQfrJUwNHtbpwqnLhkzn87aDvVBqe82mS2j0hxdTR6uRL6hBl07SOsdO2Qq2JVNBqeWkrq9cueXlIVQyRIzLmurE68dNON+cmIuhyudRY25HgbcN3lK6lTsAzceRv9+MnJiFtZdBz3/pBMGiBVpC++x85M2TtnEYRs1F2UE3I3o278SkW7L7+2E920DA94H2PCRmupsRl9j9JjRp3jont9cXR/fDMpN0ytl0Zd9iN/YdO6SqmJQPqp3mw33J3mw4fScN2TtirQYtRqNTY6ErYq1t2ZGBB8RfXSdDwHSug6B6tZKdTKMwYheuN5W+8Hf4zZSYrWGqhyn2H0io4ksinK6EhkOhIG515qRr4y5lhBJkWokksYxWghWMZYI6iwTHXI6XBDG+B446RIW8qaNopvpLI4F0XPcAjUfqZCQWkbpTte2FZc1mbq24m+gA9fKZbfwDC7d2o2Jqkrotzk105Go3fw7JW1NFIXxPE8LnmY6N2m86dwH35mRq75V01J3SLNRXuigXY25DefpIysL6esl4hFUa6sfvwjWGpm990k+x0SmQWUkW0OnsfeEhHAX8zJTjqDMN3IXvIAS/Py9pqYzQ+qKd2/la0KoTaxGZfUdkNKmuV/A8YuuLaHUHQ9vI9/0miFbUW279Y7SrA6NrEuh17PURg+2/s74nTNLTDU3pgYmi/WpsAyi4KA6I38yNa2m42E630Y24uKpBxo40deTTk3R/EL++RH/BWBovblU6oI7myn/jJ3RTaTYPFlKhsMxRxyYEi/32R5rGJS07DUjLSRaMMssiTE3giWhTPUbQVFjSx+oIyolF0OG+4mc56V4stX/djcgBP9R0Huf7p0Svop7jOS1axevUc8XYjzsPvsi+R8YCQ8Bw8PD7ufKRKxFx5/QffIyUp3nl+n6yqxFS7ZR9k/pp5yDeGytHsmbRdTxO4Sx2bsd2P8IHEnlL7ovsDMAziw++HGb3DbFSw0AElV/o6Z8X2jD0dhFkOlrar27737xKnE4AocrJbt3D9J1o4AAbpUbU2TmvbceG/77+2KqaHcS+jlFWiCbWt8cIxXUhdeGnyPWaPaGzCjspFrC9uw6X7tJUYmj1W7vY8fWVVac9Q0dB6A9D8OaCYiuiVXqKSoYHKiEWy5WNi2/rW42Gm/R4PYFJFyIiog1yKABc7+/vMpaH7Q8ItJczAMFAKAElSNCOErsR+1HDKLrSqORuFgo/8AL6RuiXLLTbuzsDSxFBnVFr1KqqjiyvnIcByANbMVAY7mKHhaWG0+jFGumVnV2FhaqiOFWwFlyZXS9iQyvvY77AAsLgMDTaviXoozNmfO4ztlZblELk2J1FhbfaZLZ/SjAYTEqaVWo+Gq0gHF2qfuXViyBc/WCnM914Fr8ZjNRtqVBaapTDlyBYG28DdcjebbzpeIcTMbJ6aLi8a6IpSlktTBtmJBuzNbdfQWudwmoYSsvUTpYR23wothDj6YKZIn93H3MSZiZYp+kNXJQd+NiB5Gclw76nv9BedB/aJjMtMIDv1PsB8zm+FfX1+TJ3XKQJcFm34Ne0nuG/5EY6O4Q1q4vrrfxJi8U9qbdwXxYgn585efs/wt3vaRtlPFO0dO2RgAiqBw9ZcKI3h06o0jtpNF6esJxIriSnMaciAIyHSDDA1rf/nbxzXHnr5TB7VS2f74aee+dHx5/wB1n/KUXxsxP/ZZgtvU7J3qPQgfMaXyFr8TIYhdb8wD6CNhbyVVp3F/5QZEGkZnPhPx+3MTUprReu701tZDa2m7MQLvawsWJlXF1YiY+xSdsTHGjXSoP4WF+0cZ3hHDKGB0IBHaDrPPSztXQzGfvMIh4qMnlu+nhK+J8YJa+l00EJxBKk0hxoTaC8VeQNsYnJRd/wAqsfIaTSxzHppjzUrPropsPD9b+UzlJrE+Pluj+0ahZjfn7b/W8jEcJzU9ejpEvFVb0xfezXPv7mb3oOmRc9idBoBec3rNcqvLTzN51/opRKUgbbx6RKZbwrllu/SvIP8A4XPgfpIh6ZMd9Ajx18iAZcUMQnE+kjbTqU7XNvESelcW9C8DtxanDKeW/XvkutXAFzKfZZR2stvCWeOw/UOnKCYNJMzeO2ii02ZjqWdrd2gHoPKZPbmPR6fVVriwNxpbQn5l7/pVdwjDqlmFzyILfpJm1qdB6bIirbLvsOX+fSMngUm1hzBqulrdn9wPzILiWNYWUjeR7a6yK6XGbz95Q5WiK0XhaGclRctlZltrcoCxFuPVDeNodSnbt7YMHimpVEqL+JGDDkbcD2HcewzPvIrGZ0z9mGI6lRCdzAjuIsfb1nOsUqZyaf4CbqOKg6hW7V3XGhtfjNf+zmvaqRzFvn49Y8fyFro6ewghEwS5MTnN7BT3yh6a4nJhyOZUeoJ9JqHYEDs0t8zCftFrWRFH5j6C3zFdPGPK1nNnNz98zDA19fCJ5Q6xsD4DyEgVEYfV1vxYepE9AbCwg/dqLcBOAYfgRqVINuOms9EbEe6L3CTr4V8fEso9v9H6ubPhmKcwjFbnnl3EzNVti49+q7u39o9d/OdYtcRokCBu6Z7oj0f/ANOhvcsTc3dn15i+7w5TQYlOo3dHQ8Di6nxgGmIo0rOpAF1vp2kWB8ASPKVWK6OFh1QMw3MCwJPMm5ve/mDLbF1MlZrm1/nhLvCIGAbjw7QeBiplWcd2vsGrTqBXGhOhuSLXsN/ePORamBKAg7r69x+/Wdg6RbJWtSIJ1Gqnkdx3ajScw2zTdOpUBDgWvwqKL8d2YcR9iiok5XZQlAdOPA/EgOLG24yXnv4Ritrv3zWRpCaR3g8feaboO+Wuv9Q8+Xlc+Ey6S+6MVMr5vyujerKfceUaH+SEfR2NTBEU20hy5LB8Gc4/aBVu9vD+0MT43tOk1dAe6cl6ZVL1xy6x8dFP/UxLfBaeWZdh1reHnGqzX++escfQ/ffGnkWNQ2DO+dC8VnwtF770W/eBY+onA51D9lW1L03oE6o2Zf6H3+TX/uERm+J84dS/eaSFicUBGnrG0rqT53F9w4dsxs6FJe4ZyRd9Bwkj/UJY6iNNTVlKnUEWtKDE7ARFIo3S+tlO89xmmJJsp+klej/qFzkW1uL8eF4Oj22RmdF1RSLePCU2O6ODNnqOGP8AMR7RdN6dEWV0HcRM4KetZyuDc1MSroSDwmE6VspUhhfTj2ce+S8NtfNYJdsxy6a75nekBdmIa4F/aCXIraUmUq07a+PgecZYSfijctbcLD3+shZdAZU5voyRLLY1SzkfmUjxGo9QJXuI5hnKuCN4MyXjFz4du2fXzorc1B+vrfyglT0YxOagnDLdbdgv9IJ0kcNNjnsN+/2H6zi+26+eq7Ddew7dx+TOpdI8VkpO/JSB3m4Hqfachdrm/efa0lTLeNfSNiRqY046o7vmO4nU/fARDfgkjX9GBLPo7tQ4bEJVH4QcrDmjfi8tD/xlZDgInnJ6EpYhXQMpBDAEEbiDrIdXZzVAQjshO5ltcdouCJh/2d9IQLYao2n/ANZPmU+R4jlOqYUDhEa5Oya2dRlqdCuoZMRiKrWBs62U7xYMqjfv13acIqr0fDKzpi2a3ElWA0B6xE0mPwmfrC4cbiJj9s13Bs9NSeLKLX77Q3O1p0+PL/jXr+ym25shabNnxJYkEhdMxI5AamZl9nZ6gXVVvoNcxFtSeU0OIqsb5KdieJ0Aitl7OYNna5biT8RlXHWC+WZXdOn/AIXGxsKlFeqAoUafXvmM6R7SD1GseqNB2iXW39pZFyKdTv7ph6jk3Pb/AJ+ISvpz3XxD1IGzHt/X4jSLdfAmS0SydtiT7RrBrct3W+/WOQ+jWHwb1XSmi5nckKN3M3J4AC58Jr6H7MsSVzCrTz2vlIe1+We3raU/RXEFMXQIQtdmUqLXsQbkX5b+5TO74apZb2037jGmU1pOqarg510e2bicOXStRdFBBDZSUudGAcaWzWI74J0PbuLNPDu6rmfKQqnixB39g3nuglEyb5enNOn2L/21QfxNc9wvb4nPM2l/H3t8TSdN8Rmr5Afwi3mT8D1Ey762A+xb7MlT5LzxIVU7vvs+IVb8IEU/4vQeETUG7sH6xAGWEAin4TSdDtgtWcVHX/bQ3/qK6+QmzOvBHwQtj4bLiKaH8Vwx7DbNbynadn4sqBm3Hj9Zy/onhTVxjuR+G/mx+gnUaNLS0SnzwdfinJ5L6nYi8j4rCod4HlKxK70/w6ry5d0j4jbtt4I8Jmm+rTH62z05CZ/bNZKSG2/gIeO6RCxte/ZMftHFPUYkzUgqsRTbQql2JJ1J8uwSJQo3YDlqe8/YkyvTj+Ao6kni3ooP19JQl2JeloR/Kfn3kXBJq3j/AOo+ZPBvm7VJ8esfvvkVRlJty08cv0gYXHQDJ/qhndVsrlcxAuxKjS/G1/WdjO1sOgUGvSBYhQP3i5mY7lUA3JPIazzhiUuNdbEjytIyIOAmqs4JVOs9RkAqGdQOrrcA2BHWEOcg2DtvEvSRHxFRl1U5nJJG6xY6kW4EwSinUJhjdo4k1KjueJ/8RoPS0hot7nT73xdQ6WiEXQ91vWSLCwozE/e+Mu99e2/0EkV2tccbj6y76H9FXxj3IK0V3ndmPIfWCWvELTwY6MdG3xTi4IQN1j+b+VT7nhOyYXZCUaJVVCjLlAHbp7Sz2VslKKBEUAAWsBJGLA6oO7Un2lFwsRPdemC6N7OWnWxAG8vm8GAItNYiSox9MUcSp4VFt/yT9CPKXdM3E5qX5M7peymhqpTBlZjcKCN0ucsjVlisZMw+PwljK04a/Ca7HUAZVNhrXmqsGcpmYxGGiFXKvgfXSXNajc275W4inZgDpfT7846ekqnCtRrMo/lJ77XtGsSLW7dP7c1vaOOLVbcur4a3+I3ijcL3nzuI5Iq6gvpxFz8GR03x2u3Wv3xtt94CM13Rd7qF0GreYsfvugkXou9jv4n1BHlDlZfBOuzOqL6y56KbJXE4hKTuyIx67qL5QBcDkLkZQToL3nQ9jfssorZsTUaofyISiDvI6x8xNYmyaNBFShSRATayi2p4k8T2mIp/Yzr9GRxfQbDPXX90hVKYCsczMHOmpud+/wAzyE3eytmpSRURQABw0kjDYVUFh4nmZKURtS4RMK1hItdATv3Ddx4xO2McKNJn4gWUc2OgH3ymF2HtdqVV2cF1qEZz/ECL2Yc950jTLa0FLfKLXpcQaQIHWpurju/Cw/tJPhJuyquZAeyObVwCVaTnMSjoQCttLj8QMpdgO6WRzcjQHdfl6ayHkWPTr8L2cNI6SLWk5XuJFqpeSZWWVOJp3kGvQsN00C4W8RicGLTMHVGRXCktu4H3lNjaFnTtew/u09LTbHC2PhM1takUOHc8ai+QI+saOxba9THYg2qnj1j5kg+0arC6jsNorFnrtb8/qCAfnziW3EdoPrKnOVNcanxiF1Eeqbz3+/8AiR6cBPpb7DxORwTuvr63MKQaL2YHtEOMnwY55PTsbFO7g8rn4jgi0EYkKAhmAyh6SbUyL+7Q9dhr/Kv1MEtZqWlH0p2j+8fIh6iercT3Dd5yFgNn31MXgcEXN+E02FwYAlNxYh28WIi4NHQFVPVNwRvGvG3AxVbZwtdAb8QSSTx3nW8tEox7JEpKljFmnL1FTh699LW5fPdJAEdxODzXI/F7yLQq8Dv95zVPqzrmlS1EtYziH0N90cZwBE0aZc3OgGvcOZ7Yd8GtpcsRhcJfrsNLGw7NZh+neJUZFUgtTNyOWWwF7bt3tNN0g2+FXJSNhuL+ll+v+ZzHatS4Pbf3EfhcIRKn+Vf0iqqHra7zc+q/WNhtG7LH2hI/42PAe9/vwiW0VhysD3kg/PpNFINXefD3I+Ywm+P1t57voR7Rjt+7xRH2Ppvt98NYIhTr6QRgPUSxaxtDFs4AJJsBvMoRGNqY5aNNnbhuHNuAmBoZ61QsxuWNzNDtVHr62IX+EHlztzMc2PswJvEdcIdNJEvAYMKBpJwSOKsSYuiAAiysJYsRWAAukpNr0sjBgBZue7P224H4MvUkTaeFL02Qb7XX+oaj6eMylqH8detGf2QHCZXFiDZRctYd53/4kDbe2Szrh6Z6gN6jD+LLrkH8oNr8+7e3idp5KWhszDTmq7ie86gdx7JmqVQl3YX3WHpMiGp0t5KTpL5ova2KzHKso8Yhyi/M/E0WB2aSbnv9pB29hsmUW/imeuI11rM09IKXzDTRj3ABvm0hObqf5m+v6Sz6QrlAH5gpJ4aAH2I8pWE9ZV5b/mBjI1c6n73XkeOVWub8400UmxynvHfBAug74Ixp6iQwq1EPa97Ag24G268CGOyjIkeqsdpqLaQnEFJofAFmNGPsLxlhBAAGLBjQMWpgwHkhmJQw7wA5vt7CEYp0/hvnH9LAEDuGo8IMJs7rAW4D5lx0to2r03/OhQ96m4/7ekf2fTBYn73CWT/HTF2KTCBVOnD/ADMZ0np3qUx/P9Z0HFABfvhMHt9rV6d9OtfxDFfcj1ka6LR2UHSLCEor8P3jDwU5F79Fv4zKlrlm7LDx/SbzpBS//nCgfgBuL65rbvBrnxmBq6L36+HD5k32P8IrQMLw7fMdxdAplBIJZEc2v1RUGdVPblKnxiiMavoIcCbr+X19YIGnp9Y8IyI6ssyITRCxRiSIAOqYGEQhijABoiGpiiIgi0AHlMUY2sVeAGe6Z070kf8AJUUnua6+5WFsk3Hf/j4k/pJTzYar2Ln/ALCH+JV7JeyKeY/WUT/Ez6TsU1yB2zGdIEArUybmzNfuzoR7mbOilzc9syXSRL4ikeBLcf5wPYW8JNlJZF2shWllNgwLk95ObyuSuvAGcyxgs1vvlOo9JibZrfwsD/VYAevPtnM9q07G4Opv5j7ESuyi6G8JgqlQMKaNUZVLEKMxCggFrDtI85M2tgXZmrBGNMU6BLDcAaSC3gVYHll1tOybIx2zmoAYd8Ol0Aygoji4BswNm3238o3UoBwUAAPEW3njccdTfxjKdJVXPRw3DoXIQb2IUd5IAgmtxXQ8pjHorUFI2WpSuuYEE7gwbTKwtuOhEEX1ZvsjtwjimNxaGOxA4kw4RgAFMXeIvDBgALwwYkmCACwIrOFW/Vvf+LdaIBgvABvFKGRwdzKw8CCPaZvYCFqaE/lX2mpOsqdiUwKFP+hR6RpfAExEAtMXtxL1aLfzNb/ycW8vSbRjrMdtX8VIgXysp/uRh8esVjSQtvgFD229DYf9fWc72smoW3M+p9pv8e5NMXG4W15nMfj1mJ2mt6j23Aff33xaKz0UeJUEKN/6C0nbP6T4uguSlXYJwBCvYcgzAso7ARIVc/h/5H2kU8ImtdC0uSxfbld6y13cl13cO8eMErwvzBN9n+xfVHqG8WsReKUyogd4LxAMVeAAMAMK8LNABRMAMTeFeACwYd4hTBfdABd5X7Lb/aQch7ScJA2SP9tfH3M0CU/CY/aDWzW3rlI78zzW4htJksWAXe/Ap/4i/vMGkqa7jIRx6oA7VTn3taY/FrcO35myj/jvPmZpsU7LSLfxEgL2vqL+AF5R45MtkG5FzE7+sf0tEorK4MviRoO9viRpJrtfz+BIzixMRmV2LT+Hv+kOEh07j9Icww9MB4tGkW8dWdBIczakdx9x8QZ40fxeHzEkwAeNSILxowrzcAfzQZowIZmAOo+sMPu8Yym+Bfr7wAkhpB2bUtTHew8mMlSs2eep/wA3/wC7TUuAJOIqEzOswz1Cx09AAoB95eVpkdruc+/+Nv8A1g0bBV4rEXLG2oZsq8EGjAnlwv4DhM3tLFj8Km51LnmxvYSXtOqy03IJHW+kz1Lce8fMiy6I1Y2MTXGo7QPp8Qqu8/fOKq7l7vrEFbEIdD3QRMEBT//Z" alt="">
+                <table>
+                    <tr>
+                        <th>이름</th>
+                        <td>&nbsp;이지은</td>
+                    </tr>
+                    <tr>
+                        <th>부캐</th>
+                        <td>&nbsp;이지금, 이지동</td>
+                    </tr>
+                    <tr>
+                        <th>생일</th>
+                        <td>&nbsp;1993.05.16</td>
+                    </tr>
+                    <tr>
+                        <th>직업</th>
+                        <td>&nbsp;싱어송라이터, 배우, 유튜버, 프로듀서</td>
+                    </tr>
+                    <tr>
+                        <th>소속사</th>
+                        <td>&nbsp;이담엔터테인먼트</td>
+                    </tr>
+                </table>
             </aside>
             <section id="section">
                 <article class="article">
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repellat ipsam, cumque aperiam officia fuga animi libero nostrum tempore quidem aliquam quos voluptates pariatur, tenetur rerum obcaecati porro at corporis enim ipsa? Dolorem similique, eos possimus iure aut, enim quaerat, harum repellat nesciunt iusto veritatis mollitia repellendus culpa facilis quis.</p>
+                    <h1>개요</h1>
+                    <br>
+                    <p>
+                        대한민국의 가수이자 배우. 만 15세였던 2008년에 가수로 데뷔했으며, 
+                        예명인 '아이유'는 '음악으로 너와 내가 하나가 된다'라는 뜻을 가지고 있다.
+                        2010년부터 국민 여동생이라는 칭호를 얻으면서 큰 인기를 끌기 시작했고,
+                        매력적인 음색과 뛰어난 작사ㆍ작곡 능력을 바탕으로 아이돌이자 아티스트로서 십수 년째 사랑 받고 있다.
+                        또한 2012년 이래로 매년 국내 및 아시아의 주요 도시에서 대규모 콘서트를 진행하며 공연자로서도 활발히 활동 중이다. 
+                        가수 활동 외에도 각종 예능 프로그램에 출연했으며,[57] 다수의 광고 모델로도 활약 중이다.
+                        2011년에 연기자로 데뷔한 후에는 다양한 드라마와 영화에서 연기 활동도 활발하게 펼치고 있다.
+                        연예계에서는 그야말로 올라운더로 인정 받는 대한민국 대표 만능 엔터테이너이며, 
+                        이 때문에 남녀불문 많은 아이돌들의 롤모델로 꾸준히 꼽히고 있다.
+                    </p>
                 </article>
                 <article class="article">
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed eligendi nesciunt rem excepturi quisquam iure sit non corrupti repellat beatae earum quos autem magnam, quas esse ratione! Sapiente aut, recusandae sit nobis cupiditate dolorum ratione nam ad. Aspernatur deserunt nostrum dolore tempore molestias tenetur quae minima, veritatis, vel quo repellendus atque consequuntur. Iure error molestias facilis, quod illo assumenda maxime aperiam blanditiis cupiditate voluptate accusantium ipsa earum reiciendis quis debitis adipisci. Beatae minus dolor culpa eveniet praesentium quidem similique fugit nulla accusantium magnam, tempora molestiae! Necessitatibus exercitationem dignissimos nulla tempore in omnis, consequuntur, officiis amet ducimus libero a corrupti illum quis enim, aliquid dicta. Consectetur consequuntur qui labore, est eaque inventore, nulla vero illum, perspiciatis voluptatibus aperiam. Adipisci ab rem, ullam velit provident nostrum dolorum, sapiente unde deleniti vero, iusto quas voluptatum atque dolorem neque! Suscipit quasi, voluptates quaerat ullam dignissimos eligendi veritatis doloremque doloribus officia laboriosam, iusto esse totam. Vel possimus id, repellat quasi explicabo blanditiis accusamus doloremque enim cumque necessitatibus numquam cum eius exercitationem, nisi optio delectus quis odio obcaecati? Perspiciatis molestias quo ex illum deserunt perferendis ipsum harum distinctio, recusandae nulla molestiae reprehenderit. Accusantium natus veritatis quia, id voluptatibus suscipit quae, voluptatum at, quos cupiditate ut nam.</p>
+                    <h1>정규 앨범</h1>
+                    <br>
+                    <p>
+                       1집 <a href="https://namu.wiki/w/Growing%20Up">Growing Up</a><br>
+                       2집 <a href="https://namu.wiki/w/Last%20Fantasy">Last Fantasy</a><br>
+                       3집 <a href="https://namu.wiki/w/Modern%20Times">Modern Times</a><br>
+                       3집 리패키지 <a href="https://namu.wiki/w/Modern%20Times%20Epilogue">Modern Times Epilogue</a><br>
+                       4집 <a href="https://namu.wiki/w/Palette">Palette</a><br>
+                       5집 <a href="https://namu.wiki/w/LILAC">LILAC</a><br>
+                    </p>
                 </article>
                 <article class="article">
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus velit commodi numquam eligendi totam iure, officiis reiciendis, labore blanditiis at, perferendis adipisci possimus nisi ab maxime quisquam vero. Accusantium similique neque fuga beatae recusandae veritatis, excepturi, modi cum, voluptates maxime quia optio quam iure odio. Hic ipsam voluptates dolorum maiores. Eaque est labore expedita at sunt, porro beatae nulla ducimus qui, earum pariatur quibusdam nesciunt iure perferendis laboriosam voluptates officiis fugiat dolor et autem hic. Consequatur nam ut vero deleniti, et sapiente aut modi distinctio consequuntur dicta obcaecati eaque iure aliquam placeat. Quisquam aut iusto minima magnam, sit similique placeat.</p>
+                    <h1>동영상</h1>
+                    <br>
+                    <p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YlY2CJaErdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
                 </article>
             </section>
         </div>
         <footer id="footer">
             <h3>Footer</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>made by letter333</p>
         </footer>
     </div>
 </body>
